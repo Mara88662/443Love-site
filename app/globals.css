@@ -26,3 +26,25 @@ body {
   background: rgba(255, 90, 140, 0.35);
   color: #fff;
 }
+@keyframes slowSpin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
