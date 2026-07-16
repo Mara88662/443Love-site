@@ -6,18 +6,21 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden bg-[#070508]">
 
       {/* Background */}
-     <div
+  {/* Main glow */}
+<div
   className="absolute inset-0"
   style={{
-    background: `
-      radial-gradient(
-        circle at 50% 15%,
-        rgba(190,55,120,0.50) 0%,
-        rgba(120,25,75,0.30) 35%,
-        rgba(45,10,30,0.15) 65%,
-        #070508 100%
-      )
-    `,
+    background:
+      "radial-gradient(circle at 50% 10%, rgba(210,70,135,0.55) 0%, rgba(125,25,78,0.28) 40%, transparent 78%)",
+  }}
+/>
+
+{/* Right glow */}
+<div
+  className="absolute inset-0"
+  style={{
+    background:
+      "radial-gradient(circle at 88% 32%, rgba(255,120,180,0.10) 0%, transparent 42%)",
   }}
 />
       <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.03),transparent_45%)]" />
@@ -40,26 +43,25 @@ export default function Hero() {
 </div>
           </div>
 
-          <h1 className="mt-6 leading-[0.88] font-serif">
+          <h1 className="mt-6 font-serif leading-[0.88] tracking-[-0.03em]">
 
-            <span className="block text-7xl lg:text-[6.7rem]">
-              LOVE
-            </span>
+            <span className="block text-[64px] lg:text-[110px]">
+  LOVE
+</span>
 
-            <span className="block text-7xl lg:text-[6.7rem]">
-              ALWAYS
-            </span>
+<span className="block text-[64px] lg:text-[110px]">
+  ALWAYS
+</span>
 
-            <span className="block text-7xl lg:text-[6.7rem]">
-              WINS
-            </span>
+<span className="block text-[64px] lg:text-[110px]">
+  WINS
+</span>
 
           </h1>
 
-          <p className="mt-8 max-w-[520px] text-[22px] leading-9 text-white/90 text-zinc-300">
-            Inspired by one of the internet's most unforgettable rooftop
-            moments.
-          </p>
+          <p className="mt-8 max-w-[520px] text-[21px] leading-9 text-white/75">
+  Inspired by one of the internet's most unforgettable rooftop moments.
+</p>
 
           <div className="mt-12 flex items-center gap-4">
 
