@@ -33,27 +33,8 @@ export default function Climb() {
           {/* RIGHT */}
 
           <div className="flex justify-center">
-
-            <div
-              className="
-                relative
-                h-[620px]
-                w-[320px]
-                rounded-[46px]
-                border
-                border-white/5
-                bg-gradient-to-br
-                from-white/[0.05]
-                to-white/[0.02]
-                backdrop-blur-3xl
-              "
-            >
-
-              <div className="absolute inset-5 rounded-[36px] border border-white/5" />
-
-            </div>
-
-          </div>
+  <PhoneMockup />
+</div>
 
         </div>
 
@@ -62,3 +43,4 @@ export default function Climb() {
     </section>
   );
 }
+import PhoneMockup from "./PhoneMockup";
